@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark: #05050a;
+  --bg-farm: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+  --accent-cyan: #00d2ff;
+  --accent-green: #74c69d;
+  --accent-purple: #6c5ce7;
+  --accent-ai: #8a2be2;
+  --gold: #f1c40f;
+  --success: #00ff88;
+  --danger: #bc4749;
+  --farm-primary: #2d6a4f;
+  --farm-secondary: #40916c;
+  --border: rgba(255,255,255,0.1);
+  --panel: rgba(255,255,255,0.03);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg-dark);
+  color: white;
+  min-height: 100vh;
+}
+
+code, .mono { font-family: 'JetBrains Mono', monospace; }
+
+button { font-family: 'Space Grotesk', sans-serif; }
+input, select, textarea { font-family: 'Space Grotesk', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes scanMove {
+  0% { top: 0; }
+  100% { top: 100%; }
+}
